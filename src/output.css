@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -661,6 +665,10 @@ video {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-sm {
@@ -878,24 +886,8 @@ video {
   font-stretch: normal;
 }
 
-.hover\:bg-opacity-75:hover {
-  --tw-bg-opacity: 0.75;
-}
-
-.hover\:bg-opacity-85:hover {
-  --tw-bg-opacity: 0.85;
-}
-
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
-}
-
-.focus\:bg-opacity-75:focus {
-  --tw-bg-opacity: 0.75;
-}
-
-.focus\:bg-opacity-85:focus {
-  --tw-bg-opacity: 0.85;
 }
 
 .focus\:bg-opacity-90:focus {

@@ -5,18 +5,25 @@ $(document).ready(function () {
     "outlook.com",
     "hotmail.com",
   ];
-  const submitBtn = $(".submit");
 
-  submitBtn.click(() => {
-    const email = $(".mce-EMAIL");
-    const domainPart = email.val().split("@")[1];
+  const submitBtn = $("#submit");
 
-    if (invalidDomains.indexOf(domainPart) !== -1) {
-      email.val("");
-      email.attr("placeholder", "Please enter a business email");
-      return false;
-    } else {
-      return true;
+  const errorMsg = document.querySelector("#error-msg");
+
+  submitBtn.click((event) => {
+    const email = $("#mce-EMAIL");
+    const emailVal = email.val();
+
+    // Check if email has a domain part
+    if (emailVal.includes("@")) {
+      const domainPart = emailVal.split("@")[1];
+
+      if (invalidDomains.includes(domainPart)) {
+        event.preventDefault(); // Prevent form submission
+        email.val("");
+        // email.attr("placeholder", "Please enter a business email");
+        errorMsg.classList.remove("hidden");
+      }
     }
   });
 });

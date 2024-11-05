@@ -62,40 +62,170 @@
       })(window, document, "script", "dataLayer", "GTM-W6SKW3Z7");
     </script>
     <!-- End Google Tag Manager -->
-    <header class="py-14">
-      <img src="images/logo.png" class="h-12 sm:h-18 w-auto mx-auto" />
-    </header>
-    <main class="mx-auto text-center mt-14 px-8 sm:px-12">
-      <div class="max-w-5xl mx-auto">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">
-          We are looking for
-          <span class="underline underline-offset-4">5 architects</span>
-          to develop <span class="text-[#C44D9C]">free</span> websites for.
-        </h1>
-        <p class="text-xl pt-5 font-normal">
-          Get a website based of the analysis off more than 100 of the world's
-          best architecture firms.
-        </p>
-        <!-- 28*3 for the margins -->
-        <img
-          src="images/main-1.webp"
-          class="w-full h-auto mx-auto pt-14 md:pt-18"
-        />
-      </div>
-      <!-- <div>
-        <img
-          src="images/main-1.webp"
-          class="w-full h-auto md:w-4/5 lg:w-5/6 mx-auto pt-14 md:pt-18"
-        />
-      </div> -->
-      <div></div>
+    <div
+      class="h-content w-full bg-[url('./images/bg-new.webp')] bg-opacity-90 bg-cover"
+    >
+      <!-- HEADER -->
+      <header class="w-full lg: max-w-7xl z-50 mx-auto">
+        <!-- lg+ -->
+        <div class="relative bg-transparent z-50">
+          <div class="absolute inset-0"></div>
 
-      <form
+          <div class="relative px-4 mx-auto sm:px-6 lg:px-8 pt-4 lg:pt-6">
+            <nav class="flex justify-between">
+              <div class="flex items-end">
+                <div class="flex-shrink-0">
+                  <a
+                    href="index.html"
+                    title="Return back to the home page."
+                    class="flex"
+                  >
+                    <img
+                      class="h-12 sm:h-18 w-auto"
+                      id="logo"
+                      src="images/logo.png"
+                      alt="supplymee.io logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-end h-content">
+                <a
+                  href="tel:+27661018392"
+                  title="Give us a call"
+                  target="_blank"
+                  class="items-center justify-center bg-[#C44D9C] rounded-full text-white hidden px-10 py-3 text-lg transition-all duration-300 border-none lg:inline-flex hover:ring-inset hover:ring-2 hover:bg-transparent hover:text-[#C44D9C] hover:ring-[#C44D9C] focus:ring-inset focus:ring-2 focus:bg-transparent focus:text-[#C44D9C] focus:ring-[#C44D9C]"
+                  role="button"
+                  >give us a call
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="py-16">
+        <div
+          class="md:flex md:justify-between items-center px-4 lg:px-8 mx-auto max-w-7xl"
+        >
+          <div class="max-w-7xl md:w-1/2">
+            <h1
+              class="text-left text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold pb-10 relative text-black"
+            >
+              We are looking for
+              <span class="underline underline-offset-4">5 architects</span>
+              to develop <span class="text-[#C44D9C]">free</span> websites for.
+            </h1>
+            <div class="pt-6 md:pt-10">
+              <p class="text-lg">
+                Potentially get a <span class="underline">FREE</span> website
+                based off the analysis of more than 100 of the world's best
+                architecture firms. <br /><br />All your have to do, is
+                <strong>fill out this form! </strong
+                ><span class="hidden md:inline-block">➡️</span
+                ><span class="md:hidden">⬇️</span>
+              </p>
+            </div>
+          </div>
+          <div class="md:w-1/2 mt-16 md:mt-0 md:px-20">
+            <form
+              action="https://formsubmit.co/info@meecorp.co.za"
+              method="POST"
+              class="space-y-3 bg-white w-content p-5 rounded-2xl shadow-2xl"
+            >
+              <div>
+                <label
+                  for="firstName"
+                  class="text-base font-medium text-gray-900"
+                >
+                  Name
+                </label>
+                <div class="mt-1">
+                  <input
+                    placeholder="Please enter your name"
+                    name="FNAME"
+                    id="mce-FNAME"
+                    placeholder="John Doe"
+                    class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-mee focus:ring-1 focus:ring-mee"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="text-base font-medium text-gray-900">
+                  Work Email*
+                  <span id="error-msg" class="text-red-600 text-right hidden">
+                    *Please enter a work email
+                  </span>
+                </label>
+                <div class="mt-1">
+                  <input
+                    required
+                    type="email"
+                    placeholder="Please enter your work email"
+                    name="EMAIL"
+                    id="mce-EMAIL"
+                    class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-mee focus:ring-1 focus:ring-mee"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="number" class="text-base font-medium text-gray-900">
+                  Phone Number
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    placeholder="+27 12 345 6789"
+                    class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-mee focus:ring-1 focus:ring-mee"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="companyName"
+                  class="text-base font-medium text-gray-900"
+                >
+                  Company Name*
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="companyName"
+                    name="companyName"
+                    id="companyName"
+                    placeholder="Your Company"
+                    class="block w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-mee focus:ring-1 focus:ring-mee"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                id="submit"
+                class="mt-10 font-bold inline-flex items-center justify-center px-12 py-4 text-base text-white transition-all duration-200 bg-[#C44D9C] border border-transparent rounded-xl hover:bg-opacity-85 focus:outline-none"
+              >
+                SIGN UP
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="font-bold pb-8 pt-12 md:pt-24 px-8 md:px-0 max-w-7xl text-right"
+      >
+        © Copyright 2024 | MEE CORP dba designmee
+      </footer>
+    </div>
+
+    <!-- <form
         autocomplete="on"
         action="https://meecorp.us21.list-manage.com/subscribe/post?u=6aa7066bba866e8403706b27b&amp;id=a35c5e5dd6&amp;f_id=00c68ae6f0"
         name="mc-embedded-subscribe-form"
         method="post"
-        class="max-w-5xl mx-auto pt-14 md:pt-18"
+        class="pt-14 md:pt-0 w-full md:w-1/2"
       >
         <div class="flex flex-col justify-center gap-2">
           <p id="error-msg" class="text-red-600 text-right hidden">
@@ -135,13 +265,7 @@
             YES, JOIN THE WAITING LIST!
           </button>
         </div>
-      </form>
-    </main>
-    <footer
-      class="font-bold pb-8 pt-24 px-8 md:px-0 max-w-5xl mx-auto text-right"
-    >
-      © Copyright 2024 | MEE CORP (PTY) Ltd
-    </footer>
+      </form> -->
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="form.js"></script>

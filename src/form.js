@@ -24,6 +24,9 @@ $(document).ready(function () {
         // email.attr("placeholder", "Please enter a business email");
         errorMsg.classList.remove("hidden");
       }
+
+      document.getElementById("submit").innerHTML =
+        '<i class="fa fa-circle-o-notch fa-spin mr-2"></i>LOADING';
     }
   });
 });
